@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,27 +16,47 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul class="menu-principal">
-                <li> Home </li>
-                <li> Projetos </li>
-                <li> Sobre </li>
-                <li> Contato </li>
+    <header id="header">
+
+        <!--navigation-->
+        <nav class="header-nav"> <!--menu desktop-->
+            <ul class="menu menu-principal">
+                <li class= "menu-item">
+                    <a href="" class= "menu-link"> 
+                        <span class="menu-text"> Home </span>
+                    </a>
+                </li>
+
+                <li class= "menu-item">
+                    <a href="" class= "menu-link"> 
+                        <span class="menu-text"> Projetos </span>
+                    </a>
+                </li>
+
+                <li class= "menu-item">
+                    <a href="" class= "menu-link"> 
+                        <span class="menu-text"> Sobre </span>
+                    </a>
+                </li>
+
+                <li class= "menu-item">
+                    <a href="" class= "menu-link"> 
+                        <span class="menu-text"> Contato </span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
-        <div class="">
-            <a href="#Home">/a>
-                <img src="img/logo.png" alt="">
-            <a>
-
+        <!-- logo -->
+        <div class="header-logo">
+            <a href="#home">
+                <img class= "logo" src="img/logo.png" alt="">
+            </a>
         </div>
         
-        <div class="">
-            <i class="bi bi-sun"></i>
+        <div class="header-toggle">
+            <i id= "toggleTheme" class="bi bi-sun"></i>
         </div>
-
     </header> <!-- fim da header -->
 
 </body>
