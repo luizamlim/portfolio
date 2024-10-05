@@ -1,98 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-     initial-scale=1.0">
-    <title> Luiza Marques | Portfólio 👩‍💻</title>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Luiza Marques de Lima | Portifólio </title>
+    
+    
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="css/estilo.css">
 
-    <!-- Bootstrap Icons -->
+    <!-- BootStrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
 
-<body>
+    <!-- Boxicons Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <header id="header">
 
-        <!--navigation-->
-        <nav class="header-nav"> <!--menu desktop-->
+    
+
+  </head>
+  <body>
+
+    <header id="header"> <!-- cabeçalho -->
+        <nav class="header-nav">
+            
+            <!-- menu Desktop -->
             <ul class="menu menu-principal">
-                <li class= "menu-item">
-                    <a href="" class= "menu-link"> 
-                        <span class="menu-text"> Home </span>
+                <li class="menu-item">
+                   <a class="menu-link active" href="#home">
+                       <span class="menu-text"> Home </span> 
+                   </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#projetos">
+                       <span class="menu-text"> Projetos </span> 
                     </a>
                 </li>
-
-                <li class= "menu-item">
-                    <a href="" class= "menu-link"> 
-                        <span class="menu-text"> Projetos </span>
+                <li class="menu-item">
+                    <a class="menu-link" href="#sobre">
+                       <span class="menu-text"> Sobre </span> 
                     </a>
                 </li>
-
-                <li class= "menu-item">
-                    <a href="" class= "menu-link"> 
-                        <span class="menu-text"> Sobre </span>
-                    </a>
-                </li>
-
-                <li class= "menu-item">
-                    <a href="" class= "menu-link"> 
-                        <span class="menu-text"> Contato </span>
+                <li class="menu-item">
+                    <a class="menu-link" href="#contato">
+                       <span class="menu-text"> Contato </span> 
                     </a>
                 </li>
             </ul>
         </nav>
-
-        <!-- logo -->
-        <div class="header-logo">
-            <a href="#home">
-                <img class= "logo" src="img/logo.png" alt="">
-            </a>
-        </div>
         
-        <div class="header-toggle">
-            <i id= "toggleTheme" class="bi bi-sun"></i>
-        </div>
-    </header> <!-- fim da header -->
+        <div class="header-logo">  <!-- area do logo -->
+            <a href="#home">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+        </div><!-- Fim area do logo -->
 
-    <!-- menu mobile -->
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>
+
+    </header> <!-- fim cabeçalho -->
+
+    <!-- Menu Mobile -->
     <nav class="nav-mobile">
         <ul class="menu menu-mobile">
-         
+
             <li class="menu-item">
                 <a href="" class="menu-link active">
-                    <i class="bi bi-house-fill"> </i>
+                    <i class="menu-icon bi bi-house-door"> </i>
                     <span class="menu-text"> Home </span>
                 </a>
             </li>
 
             <li class="menu-item">
                 <a href="" class="menu-link active">
-                    <i class="bi bi-layers-fill"></i>
+                    <i class="menu-icon bi bi-window-stack"> </i>
                     <span class="menu-text"> Projetos </span>
                 </a>
             </li>
+
             <li class="menu-item">
                 <a href="" class="menu-link active">
-                    <i class="bi bi-person-fill"> </i>
+                    <i class="menu-icon bi bi-person"> </i>
                     <span class="menu-text"> Sobre </span>
                 </a>
             </li>
+
             <li class="menu-item">
                 <a href="" class="menu-link active">
-                    <i class="bi bi-telephone-fill"> </i>
+                    <i class="menu-icon bi bi-telephone"> </i>
                     <span class="menu-text"> Contato </span>
                 </a>
             </li>
 
-        </ul>
-    </nav>
+        </ul> 
+    </nav> <!-- Fim menu mobile -->
 
-</body>
+    <main id="home">  <!-- principal ou resumo -->
 
+        <div class="main-content">
+
+            <h1> <b> Soluções Criativas & </b> Desenvolvimento Front-End </h1>
+            <!-- titulo / Slogan -->
+
+            <p> Luiza Marques, São Paulo - SP, Estudante de Análise e Desenvolvimento de Sistemas.</p>           
+
+            <!-- Redes Sociais -->
+            <ul class="menu menu-social"> 
+
+                <li>
+                    <a href="https://github.com/luizamlim" target="_blank">
+                        <i class="menu-icon bi bi-github"> </i>
+                    </a>
+                </li>
+
+                <li> 
+                    <a href="https://www.linkedin.com/in/luiza-marques-1671691b4" target="_blank">
+                        <i class="menu-icon bi bi-linkedin"></i>
+                    </a>
+                </li>
+
+                <li> 
+                    <a href="http://mailto:luizadelimamarques02@gmail.com" target="_blank">
+                        <i class="menu-icon bi bi-envelope-at-fill"></i>
+                    </a>
+                </li>
+
+                <li> 
+                    <a href="http://wa.me/+5511980773340" target="_blank">
+                        <i class="menu-icon bi bi-whatsapp"></i>
+                    </a>
+                </li>
+
+            </ul> <!-- Fim Redes Sociais -->
+
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"> </i>
+                </button>
+            </a>
+
+            <div class="video">
+
+                <iframe src="https://www.youtube.com/embed/L-Uo3c62a8Q" title="A inteligência artificial na detecção do câncer de mama | Google Health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>                  
+           
+        </div>
+    </main>
+
+    <section id="projetos" class="projetos">
+
+        <h2> Projetos </h2>
+
+        <div class="projetos-container">
+
+            <div class="projeto-card"> <!-- Proj 1 -->
+                
+                <img src="img/projetos/games-store.jpg" alt=""
+                class="card-cover">
+
+                <div class="card-body">
+
+                    <h3 class="card-title"> Hobby plans </h3>
+
+                    <p class="card-description"> Lista de hobbies que tenho interesse</p>
+
+                    <ul class="card-lista">
+                        <li class="card-item">
+                            Academia/atitividades físicas
+                        </li>
+
+                        <li class="card-item">
+                            Visitas de exposições culturais
+                        </li>
+
+                        <li class="card-item">
+                            Cursos extracurriculares
+                        </li>
+                        
+                        <li class="card-item">
+                            Pinturas diversas
+                        </li>
+                     
+                    </ul>
+
+                    <div class="card-button">
+
+                        <button class="btn btn-primary">
+                            
+                            <a href="https://centrocultural.sp.gov.br/"
+                            target="_blank">
+                                <span> Ver conteúdo </span>
+                                <i class="bi bi-arrow-down-right"></i>
+                        </a>
+
+                        </button>
+
+                        <button class="btn">  
+                            <a href="https://https://github.com/luizamlim/"
+                            target="_blank">
+                            <span> Ver Repositório </span>
+                        
+                        </a>
+                        </button>
+                </div> <!-- Fim card-body -->
+            </div> <!-- Fim de projeto container -->
+        </div> <!--Fim Proj 1-->
+        
+
+        <div class="projeto-card card-reverse"> <!-- Proj 2 -->
+                
+            <img src="img/projetos/josisbox.jpg" alt=""
+            class="card-cover">
+
+            <div class="card-body">
+
+                <h3 class="card-title"> Place suggestions </h3>
+
+                <p class="card-description"> Lista de lugares que recomendo</p>
+
+                <ul class="card-lista">
+                    <li class="card-item">
+                        Centro Cultural de São Paulo
+                    </li>
+
+                    <li class="card-item">
+                        Espaço CCB
+                    </li>
+
+                    <li class="card-item">
+                        Ibirapuera
+                    </li>
+
+                 
+                </ul>
+
+                <div class="card-button">
+
+                    <button class="btn btn-primary">
+                        
+                        <a href="https://centrocultural.sp.gov.br/"
+                        target="_blank">
+                            <span> Ver conteúdo </span>
+                            <i class="bi bi-arrow-down-right"></i>
+                    </a>
+
+                    </button>
+
+                    <button class="btn">  
+                        <a href="https://https://github.com/luizamlim/"
+                        target="_blank">
+                        <span> Ver Repositório </span>
+                    
+                    </a>
+                    </button>
+            </div> <!-- Fim card-body -->
+        </div> <!-- Fim de projeto container -->
+    </div> <!--Fim Proj 1-->
+
+
+    </section>
+
+
+
+    <section id="sobre" class="sobre">
+
+        <h2> Sobre Mim </h2>
+
+    </section>
+
+    <section id="contato" class="contato">
+
+        <h2> Contato </h2>
+
+    </section>
+
+
+
+    
+
+    
+
+    
+    <script src="js/script.js"> </script>
+
+  </body>
 </html>
-
