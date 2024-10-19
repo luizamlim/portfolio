@@ -1,6 +1,6 @@
 :root,
 :root[data-theme="dark"] {
-    --primary-color: #571086ea; /*texto*/
+    --primary-color: #ab5be0ea; /*texto*/
     --primary-bg: #000; /*background = fundo*/
     --hover-menu: hsl(281, 72%, 72%);
     --menu-texto:  #ebebeb;
@@ -51,16 +51,17 @@ b {
 }
 
 h1 {
+    font-family: "Fraunces", serif;
     font-size: 2.5rem;
     font-weight: 200;
 }
 
 h2 {
-    
+    font-family: "Rampart One", sans-serif;
 }
 
 h3 {
-
+    font-family: "Rampart One", sans-serif;
 }
 
 p, span, li{
@@ -272,7 +273,7 @@ p {
     font-size: 2rem;
     color: var(--cor-titulo);
     font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Modak", system-ui;
 }
 
 .card-description { /* p= parágrafo */
@@ -314,6 +315,21 @@ p {
     margin: auto;
 }
 
+/* sobre */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sobre-logo {
+    width: 100%;
+    object-fit: cover;
+    object-position: center; /* AULA QUE VEM */
+    pointer-events: none;
+    border-radius: 50rem;
+    border: 8px solid var(--primary-color);
+}
 
 /* Responsividade Responsivo */
 
