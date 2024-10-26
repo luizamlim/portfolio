@@ -1,3 +1,4 @@
+/* INTERAÇÕES DO USUÁRIO */
 
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;

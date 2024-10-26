@@ -9,6 +9,10 @@
     --hover-social: #ead4f7cf;
     --cor-titulo:  #a78dbd;
     --cor-texto:  #7f3aa7;
+
+/*     PARA MUDAR A COR DOS TEXTOS DOS CURSOS
+    --titulo-accordion: #ebebeb;
+    --body-accordion: #000; */
 }
 
 :root[data-theme="light"] {
@@ -19,6 +23,10 @@
     --hover-social:#602083cf;
     --cor-titulo:  #260541;
     --cor-texto:  #32063f;
+
+/*     PARA MUDAR A COR DOS TEXTOS DOS CURSOS
+    --titulo-accordion: #000;
+    --body-accordion: #ebebeb; */
 }
 
 /* CSS Geral */
@@ -61,7 +69,8 @@ h2 {
 }
 
 h3 {
-    font-family: "Rampart One", sans-serif;
+    font-family: "Rampart One", sans-serif; /* *ARRUMAR */
+    
 }
 
 p, span, li{
@@ -235,7 +244,7 @@ p {
     aspect-ratio: 16/9;
 }
 
-#home, .projetos, .sobre, .contato {
+#home, .projetos, .sobre, .contato { /* A VÍRGULA REPRESENTA DUAS CLASSES COM AS MESAS PROPRIEDADES */
     /* padding: 5rem 10rem; */
     padding: 2.5rem 1rem;
 }
@@ -331,7 +340,90 @@ p {
     border: 8px solid var(--primary-color);
 }
 
-/* Responsividade Responsivo */
+
+.sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+} 
+
+.sobre-icones {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+} 
+
+.sobre-icones i {
+    font-size: 1.25rem;
+    color: #e4bcee;
+} 
+
+.sobre-conteudo1, .sobre-conteudo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.sobre-conteudo2 .col1,
+.sobre-conteudo2 .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    gap: 2rem;
+}
+
+.sobre-conteudo2 .col2 .row1,
+.sobre-conteudo2 .col2 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;  
+}
+
+.accordion-header span {
+    color: var(--titulo-accordion);
+}
+
+.accordion-body {
+    display:none; /* esconde as respostas */
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem;
+    border: 1px solid var(--menu-texto) /* *PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--primary-color) */
+}
+
+.accordion-item.active .accordion-header {
+    background: var(--menu-texto); /*PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--body-accordion) */
+}
+
+.accordion-item.active .accordion-body {
+    display: flex; /* contéudo aparece após o click */
+}
+
+.accordion-item.active .bi-caret-down-fill { /* *adicionar classe no ícone depois */
+    transform: rotate(180deg);
+}
+
+
+
+
+/* Responsividade Responsivo */           /* a parte da mídia tem que ser último  */
 
 @media (min-width: 768px) {
     #header {
@@ -367,14 +459,25 @@ p {
         flex-direction: row;
     }
 
-    .card-reverse{
+    .card-reverse {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
     .card-cover {
         width: 55%;
+
     }
+
+    .sobre {
+        gap: 5rem;
+    }
+
+    .sobre-conteudo1,.sobre-conteudo2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+    }
+
 } /* Fim 992px */
     
 @media (min-width: 1200px) {
