@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Luiza Marques de Lima | Portifólio </title>
+    <title> Luiza Marques | Portfólio </title>
 
-
-    <!-- Estilo CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Link para o BootStrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- BootStrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -25,6 +24,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Modak&family=Rampart+One&display=swap"
         rel="stylesheet">
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
@@ -76,28 +78,28 @@
         <ul class="menu menu-mobile">
 
             <li class="menu-item">
-                <a href="" class="menu-link active">
+                <a href="#home" class="menu-link active">
                     <i class="menu-icon bi bi-house-door"> </i>
                     <span class="menu-text"> Home </span>
                 </a>
             </li>
 
             <li class="menu-item">
-                <a href="" class="menu-link active">
+                <a href="#projetos" class="menu-link">
                     <i class="menu-icon bi bi-window-stack"> </i>
                     <span class="menu-text"> Projetos </span>
                 </a>
             </li>
 
             <li class="menu-item">
-                <a href="" class="menu-link active">
+                <a href="#sobre" class="menu-link">
                     <i class="menu-icon bi bi-person"> </i>
                     <span class="menu-text"> Sobre </span>
                 </a>
             </li>
 
             <li class="menu-item">
-                <a href="" class="menu-link active">
+                <a href="#contato" class="menu-link">
                     <i class="menu-icon bi bi-telephone"> </i>
                     <span class="menu-text"> Contato </span>
                 </a>
@@ -113,7 +115,7 @@
             <h1> <b> Soluções Criativas & </b> Desenvolvimento Front-End </h1>
             <!-- titulo / Slogan -->
 
-            <p> Luiza Marques, São Paulo - SP, Estudante de Análise e Desenvolvimento de Sistemas.</p>
+            <p> Luiza Marques de Lima, São Paulo - SP, Estudante de Análise e Desenvolvimento de Sistemas.</p>
 
             <!-- Redes Sociais -->
             <ul class="menu menu-social">
@@ -131,13 +133,13 @@
                 </li>
 
                 <li>
-                    <a href="http://mailto:luizadelimamarques02@gmail.com" target="_blank">
+                    <a href="mailto:luizadelimamarques02@gmail.com" target="_blank">
                         <i class="menu-icon bi bi-envelope-at-fill"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="http://wa.me/+5511980773340" target="_blank">
+                    <a href="https://wa.me/+5511980773340" target="_blank">
                         <i class="menu-icon bi bi-whatsapp"></i>
                     </a>
                 </li>
@@ -145,7 +147,7 @@
             </ul> <!-- Fim Redes Sociais -->
 
             <a href="#projetos">
-                <button class="btn btn-primary">
+                <button class="btn btn-primario">
                     <span>Ver Projetos</span>
                     <i class="bi bi-arrow-down-right"> </i>
                 </button>
@@ -153,15 +155,48 @@
 
             <div class="video">
 
-                <iframe src="https://youtu.be/gWBDHzD-uUc?si=WVF7Zbtumb94cqMf"
-                    title="A inteligência artificial na detecção do câncer de mama | Google Health" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/FOq6LIVvA8E?si=koWbt0cgBxUBHJFZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             </div>
 
         </div>
     </main>
+
+
+<section id="slide" class="slide">
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.ytimg.com/vi/14di5tJxn7c/maxresdefault.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://oquefazeremssa.com.br/wp-content/uploads/2024/07/bk.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/pj7l8GtMHns/maxresdefault.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+</section>
+
+
 
     <section id="projetos" class="projetos">
 
@@ -200,7 +235,7 @@
 
                     <div class="card-button">
 
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primario">
 
                             <a href="https://centrocultural.sp.gov.br/" target="_blank">
                                 <span> Ver conteúdo </span>
@@ -248,7 +283,7 @@
 
                     <div class="card-button">
 
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primario">
 
                             <a href="https://centrocultural.sp.gov.br/" target="_blank">
                                 <span> Ver conteúdo </span>
@@ -299,7 +334,7 @@
 
                     <div class="card-button">
 
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primario">
 
                             <a href="https://centrocultural.sp.gov.br/" target="_blank">
                                 <span> Ver conteúdo </span>
@@ -352,7 +387,7 @@
                 <div class="descricao-buton">
 
                     <a href="https://wa.me/+5511980773340" target="_blank">
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primario">
                             <span> Conecte-se comigo </span>
                         </button>
                     </a>
@@ -406,7 +441,7 @@
                     <h3> Experiências </h3>
 
                     <h4> Auxiliar Administrativo de Documentação </h4>
-                    <span> Consórcio Construtor Metrô Linha 2 Verde | Abr 2024 - Atualmente </span>
+                    <span> Consórcio Construtor Metrô Linha 2 Verde | Abr. 2024 - Atualmente </span>
                     <br>
                     <span> Responsável pelo recebimento, classificação, organização e arquivamento de documentos físicos
                         e digitais. </span>
@@ -431,16 +466,16 @@
                             <div class="accordion-item active">
 
                                 <!-- pergunta -->
-                                <button class="accordion-header start">
+                                <button class="accordion-header1 start">
                                     <span> Designer de Interface Web </span>
                                     <i class="bi bi-caret-down-fill"></i>
                                 </button>
 
                                 <!-- resposta -->
-                                <div class="accordion-body">
+                                <div class="accordion-body1">
                                     <p> SENAI Mariano Ferraz | Nov. 2024 | 60 horas </p>
                                     <p> Desenvolvimento de interfaces web que sejam agradáveis, intuitivas e fáceis de
-                                        usar, bem como, utilzar diferentes ferramentas e softwares de design, a partir
+                                        usar, bem como, utilzar diferentes ferramentas e softwares de design a partir
                                         das linguagens HTML, CSS e JavaScript para criar essas interfaces. </p>
                                 </div>
                             </div>
@@ -448,13 +483,13 @@
                             <!-- Pergunta 2 -->
                             <div class="accordion-item">
 
-                                <button class="accordion-header start">
+                                <button class="accordion-header1 start">
                                     <span> Fundamentos de Python I </span>
                                     <i class="bi bi-caret-down-fill"></i>
                                 </button>
 
-                                <div class="accordion-body">
-                                    <p> SENAI Oscar Rodrigues Alves | Mai. 2024 | 30 horas </p>
+                                <div class="accordion-body1">
+                                    <p> SENAI Oscar Rodrigues Alves | Jan. 2024 | 30 horas </p>
                                     <p> Desenvolvimento de competências relativas à programação, compreendendo os tipos
                                         de variáveis, strings, operadores básicos, exceções, lista e outras funções
                                         principais. Demonstrar raciocínio lógico utilizando a linguagem de programação
@@ -465,12 +500,12 @@
                             <!-- Pergunta 3 -->
                             <div class="accordion-item">
 
-                                <button class="accordion-header start">
+                                <button class="accordion-header1 start">
                                     <span> Corel Draw </span>
                                     <i class="bi bi-caret-down-fill"></i>
                                 </button>
 
-                                <div class="accordion-body">
+                                <div class="accordion-body1">
                                     <p> SENAI Theobaldo Nigris | Dez. 2023 | 40 horas </p>
                                     <p> Capacitação na realização de diversos tipos de ilustrações e vetorizações com
                                         auxílio do aplicativo Corel Draw, utilizando ferramentas especiais, executando
@@ -490,15 +525,70 @@
     <section id="contato" class="contato">
 
         <h2> Contato </h2>
+        <p>
+            Estou disponível para orientações e novas conexões.
+            <br>
+            Contate-me via e-mail e conecte-se comigo através das minhas redes sociais.
+        </p>
 
-    </section>
+        <ul class="menu menu-social">
+
+            <li>
+                <a class="menu-link" href="https://github.com/luizamlim" target="_blank">
+                    <i class="menu-icon bi bi-github"> </i>
+                    <span> GitHub </span>
+
+                </a>
+            </li>
+
+            <li>
+                <a class="menu-link" href="https://instagram.com/luiza_dlima/" target="_blank">
+                    <i class="menu-icon bi bi-instagram"> </i>
+                    <span> Instagram </span>
+
+                </a>
+            </li>
+
+            <li>
+                <a class="menu-link" href="https://www.linkedin.com/in/luiza-marques-1671691b4" target="_blank">
+                    <i class="menu-icon bi bi-linkedin"> </i>
+                    <span> Linkedin </span>
+
+                </a>
+            </li>
+
+        </ul>  <!-- Fim menu social -->
+
+        <!-- EMAIL -->
+         <a href="mailto:luizadelimamarques02@gmail.com">
+            <button class="btn btn-primario">
+                <span class="email"> luizadelimamarques02@gmail.com </span>
+            </button>
+         </a>
+
+    </section>   <!-- Fim contato -->
 
 
+    <footer> <!-- /* Roda Pé */ -->
+        <p>
+            &copy; 2024. Portifólio desenvolvido para fins educativos com base nas aulas no
+            <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank">
+                SENAI Leopoldina - SP.
+            </a>
+            Desenvolvido por Luiza Marques de Lima e orientações do instrutor 
+            <a href="https://github.com/guuhferiani" target="_blank">
+                Gustavo Feriani.
+            </a>
+        </p>
 
 
+    </footer>
 
 
-    <!-- AS JS -->
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+
+    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/script.js"> </script>

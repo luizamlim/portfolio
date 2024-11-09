@@ -9,10 +9,9 @@
     --hover-social: #ead4f7cf;
     --cor-titulo:  #a78dbd;
     --cor-texto:  #7f3aa7;
-
-/*     PARA MUDAR A COR DOS TEXTOS DOS CURSOS
-    --titulo-accordion: #ebebeb;
-    --body-accordion: #000; */
+    --border-color: #fff;
+   /*  --titulo-accordion: #ffffff;
+    --body-accordion: #ffffff; */
 }
 
 :root[data-theme="light"] {
@@ -20,13 +19,12 @@
     --primary-bg: #ebebeb;
     --hover-menu: #000000;
     --menu-texto: #8942c4ea;
-    --hover-social:#602083cf;
+    --hover-social:#100218cf;
     --cor-titulo:  #260541;
     --cor-texto:  #32063f;
-
-/*     PARA MUDAR A COR DOS TEXTOS DOS CURSOS
-    --titulo-accordion: #000;
-    --body-accordion: #ebebeb; */
+    --border-color: #aa69c9;
+/*     --titulo-accordion: #000000ea;
+    --body-accordion: #000000ea; */
 }
 
 /* CSS Geral */
@@ -218,11 +216,11 @@ p {
     text-transform: uppercase;
 }
 
-.btn-primary span {
+.btn-primario span {
     color: var(--primary-color);
 }
 
-.btn-primary {
+.btn-primario {
     border: 1px solid var(--hover-menu);
 }
 
@@ -382,7 +380,7 @@ p {
     gap: 5rem;
 }
 
-.accordion-header {
+.accordion-header1 {
     width: 100%;
     display: flex;
     padding: 0.75rem 1rem;
@@ -395,24 +393,24 @@ p {
     transition: ease-in-out .3s;  
 }
 
-.accordion-header span {
+.accordion-header1 span {
     color: var(--titulo-accordion);
 }
 
-.accordion-body {
+.accordion-body1 {
     display:none; /* esconde as respostas */
     padding: 1.25rem;
     flex-direction: column;
     align-items: flex-start;
     gap: .625rem;
-    border: 1px solid var(--menu-texto) /* *PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--primary-color) */
+    border: 1px solid var(--primary-color) /* *PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--primary-color) */
 }
 
-.accordion-item.active .accordion-header {
-    background: var(--menu-texto); /*PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--body-accordion) */
+.accordion-item.active .accordion-header1 {
+    background: var(--body-accordion); /*PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--body-accordion) */
 }
 
-.accordion-item.active .accordion-body {
+.accordion-item.active .accordion-body1 {
     display: flex; /* contéudo aparece após o click */
 }
 
@@ -421,6 +419,47 @@ p {
 }
 
 
+/* Contato */
+.contato {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-color); /* variável borda*/
+    border-bottom: 1px solid var(--border-color); /* variável borda */
+}
+
+.contato p {
+    text-align: center;
+/*  font-family: "";
+    color: var(); */
+}
+
+.contato .btn {
+    width: auto; /* correção */
+}
+
+.contato.email {
+    text-transform: uppercase; /* caixa-alta */
+}
+
+
+/* Roda Pé */
+footer {
+    margin-bottom: 5rem;
+}
+
+footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p a{
+    color: #7c00be;
+}
 
 
 /* Responsividade Responsivo */           /* a parte da mídia tem que ser último  */
@@ -452,7 +491,12 @@ p {
     #home, .projetos, .sobre, .contato  {
         padding: 8rem 6rem 4rem 6rem;
     }
+
+    .contato {
+        padding: 6rem;
+    }
 } /* Fim 768px */
+
 
 @media (min-width: 992px) {
     .projeto-card {
