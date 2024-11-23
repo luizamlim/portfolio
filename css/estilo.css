@@ -10,8 +10,8 @@
     --cor-titulo:  #a78dbd;
     --cor-texto:  #7f3aa7;
     --border-color: #fff;
-   /*  --titulo-accordion: #ffffff;
-    --body-accordion: #ffffff; */
+    --titulo-accordion: #ffffff;
+    --body-accordion: #1d1d1d;
 }
 
 :root[data-theme="light"] {
@@ -23,8 +23,8 @@
     --cor-titulo:  #260541;
     --cor-texto:  #32063f;
     --border-color: #aa69c9;
-/*     --titulo-accordion: #000000ea;
-    --body-accordion: #000000ea; */
+    --titulo-accordion: #000000ea;
+    --body-accordion: #ebebebea;
 }
 
 /* CSS Geral */
@@ -387,7 +387,7 @@ p {
     justify-content: space-between;
     align-items: center;
     border: 1px solid var(--primary-color);
-    background: transparent;
+    background: var(--body-accordion);
     text-align: left;
     cursor: pointer;
     transition: ease-in-out .3s;  
