@@ -1,14 +1,16 @@
 :root,
 :root[data-theme="dark"] {
-    --primary-color: #ab5be0ea; /*texto*/
-    --primary-bg: #000; /*background = fundo*/
+    --primary-color: #ab5be0ea;
+    /*texto*/
+    --primary-bg: #000;
+    /*background = fundo*/
     --hover-menu: hsl(281, 72%, 72%);
-    --menu-texto:  #ebebeb;
+    --menu-texto: #ebebeb;
     --icon-color: #ead4f7cf;
     --icone-tema: #d7b21e;
     --hover-social: #ead4f7cf;
-    --cor-titulo:  #a78dbd;
-    --cor-texto:  #7f3aa7;
+    --cor-titulo: #a78dbd;
+    --cor-texto: #7f3aa7;
     --border-color: #fff;
     --titulo-accordion: #ffffff;
     --body-accordion: #1d1d1d;
@@ -19,37 +21,38 @@
     --primary-bg: #ebebeb;
     --hover-menu: #000000;
     --menu-texto: #8942c4ea;
-    --hover-social:#100218cf;
-    --cor-titulo:  #260541;
-    --cor-texto:  #32063f;
+    --hover-social: #100218cf;
+    --cor-titulo: #260541;
+    --cor-texto: #32063f;
     --border-color: #aa69c9;
     --titulo-accordion: #000000ea;
     --body-accordion: #ebebebea;
 }
 
 /* CSS Geral */
-body{
-    background: var(--primary-bg);  /* fundo */
+body {
+    background: var(--primary-bg);
+    /* fundo */
     color: var(--primary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 html[data-theme="light"] .logo {
     filter: invert(1);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-a:hover{
-  color: var(--hover-menu)
+a:hover {
+    color: var(--hover-menu)
 }
 
 i {
-  color: var(--icon-color);
+    color: var(--icon-color);
 }
 
 b {
@@ -67,11 +70,14 @@ h2 {
 }
 
 h3 {
-    font-family: "Rampart One", sans-serif; /* *ARRUMAR */
-    
+    font-family: "Rampart One", sans-serif;
+    /* *ARRUMAR */
+
 }
 
-p, span, li{
+p,
+span,
+li {
     font-size: 1rem;
 }
 
@@ -81,12 +87,13 @@ p {
 
 
 /* Reset CSS  */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
+
 /* fim reset  */
 
 /* header  */
@@ -104,9 +111,12 @@ p {
 }
 
 /* .header-logo .logo */
-.logo {  /* img */
-    width: 3.25rem;  /* comprimento */
-    height: 3.25rem;  /* altura  */
+.logo {
+    /* img */
+    width: 3.25rem;
+    /* comprimento */
+    height: 3.25rem;
+    /* altura  */
 }
 
 .header-toggle {
@@ -120,7 +130,8 @@ p {
     cursor: pointer;
 }
 
-.menu {   /* UL */
+.menu {
+    /* UL */
     display: flex;
     align-items: center;
     background: var(--primary-bg);
@@ -145,7 +156,8 @@ p {
 /* Menu Mobile */
 
 .menu-mobile {
-    width: 100vw; /*V W = Viewport Width */
+    width: 100vw;
+    /*V W = Viewport Width */
     position: fixed;
     bottom: 0;
     justify-content: space-between;
@@ -163,15 +175,17 @@ p {
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon,
 .menu-link:hover .menu-text {
-    color: #c9a7ffea;  /*cor de link */
+    color: #c9a7ffea;
+    /*cor de link */
 }
 
-.menu-icon, .menu-text {
+.menu-icon,
+.menu-text {
     color: var(--menu-texto);
     font-weight: 600;
 }
 
-.menu-icon{
+.menu-icon {
     font-size: 1.5rem;
 }
 
@@ -211,7 +225,8 @@ p {
     transition: ease-in-out .5s;
 }
 
-.btn span, .btn i {
+.btn span,
+.btn i {
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -242,14 +257,17 @@ p {
     aspect-ratio: 16/9;
 }
 
-#home, .sobre, .contato, .inspirações { /* A VÍRGULA REPRESENTA DUAS CLASSES COM AS MESAS PROPRIEDADES */
+#home,
+.sobre,
+.contato,
+.inspirações {
+    /* A VÍRGULA REPRESENTA DUAS CLASSES COM AS MESAS PROPRIEDADES */
     /* padding: 5rem 10rem; */
     padding: 2.5rem 1rem;
 }
 
 
 /* Inspirações */
-
 .inspirações {
     display: flex;
     flex-direction: column;
@@ -262,65 +280,91 @@ p {
     gap: 4rem;
 }
 
-.inspirações-card {
+/*.inspirações-card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}*/
+
+.card-cover {
+    /* Fotos */
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
-.card-cover { /* Fotos */
-    font-size: 2rem;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 1rem;
+.inspirações-card,
+.projeto-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    /* espaço entre os cards */
 }
 
-.card-title { /* h3 */
+.card-body {
+    width: 50%;
+}
+
+/* Inverte os cards que tiverem a classe card-reverse */
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.card-title {
+    /* h3 */
     font-size: 2rem;
     color: var(--cor-titulo);
     font-weight: 100;
     font-family: "Modak", system-ui;
 }
 
-.card-description { /* p= parágrafo */
+.card-description {
+    /* p= parágrafo */
     color: var(--cor-texto)
+        /* font-size; ; font-family: ; */
+}
 
-/*     font-size; ;
-    font-family: ; */
-} 
-
-.card-lista,.sobre-lista{ /* estrutura lista */
+.card-lista,
+.sobre-lista {
+    /* estrutura lista */
     margin-left: 1.25rem;
     margin-top: 15px;
     margin-bottom: 25px;
 }
 
-.card-item,.sobre-item{ /* tópicos lista */ /* list-style: none */
+.card-item,
+.sobre-item {
+    /* tópicos lista */
+    /* list-style: none */
     margin-top: 15px;
     list-style: disc;
 }
 
-.card-button, .card-description{
+.card-button,
+.card-description {
     display: flex;
-    flex-flow: row wrap; /* Permite quebra de texto */
+    flex-flow: row wrap;
+    /* Permite quebra de texto */
     justify-content: flex-start;
 }
 
-.card-button .btn{
+.card-button .btn {
     padding: .65rem 1.25rem;
     margin-top: 15px;
 }
 
-.card-button .btn span{
+.card-button .btn span {
     font-size: 1rem;
     /* color: var(--text-botao);*/
 }
 
-.inspirações .btn{
+.inspirações .btn {
     width: auto;
     margin: auto;
 }
+
 
 /* sobre */
 .sobre {
@@ -332,7 +376,8 @@ p {
 .sobre-logo {
     width: 100%;
     object-fit: cover;
-    object-position: center; /* AULA QUE VEM */
+    object-position: center;
+    /* AULA QUE VEM */
     pointer-events: none;
     border-radius: 50rem;
     border: 8px solid var(--primary-color);
@@ -344,20 +389,21 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     gap: 1.5rem;
-} 
+}
 
 .sobre-icones {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-} 
+}
 
 .sobre-icones i {
     font-size: 1.25rem;
     color: #e4bcee;
-} 
+}
 
-.sobre-conteudo1, .sobre-conteudo2 {
+.sobre-conteudo1,
+.sobre-conteudo2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -390,7 +436,7 @@ p {
     background: var(--body-accordion);
     text-align: left;
     cursor: pointer;
-    transition: ease-in-out .3s;  
+    transition: ease-in-out .3s;
 }
 
 .accordion-header1 span {
@@ -398,23 +444,28 @@ p {
 }
 
 .accordion-body1 {
-    display:none; /* esconde as respostas */
+    display: none;
+    /* esconde as respostas */
     padding: 1.25rem;
     flex-direction: column;
     align-items: flex-start;
     gap: .625rem;
-    border: 1px solid var(--primary-color) /* *PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--primary-color) */
+    border: 1px solid var(--primary-color)
+        /* *PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--primary-color) */
 }
 
 .accordion-item.active .accordion-header1 {
-    background: var(--body-accordion); /*PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--body-accordion) */
+    background: var(--body-accordion);
+    /*PARA MUDAR A COR DOS TEXTOS DOS CURSOS var(--body-accordion) */
 }
 
 .accordion-item.active .accordion-body1 {
-    display: flex; /* contéudo aparece após o click */
+    display: flex;
+    /* contéudo aparece após o click */
 }
 
-.accordion-item.active .bi-caret-down-fill { /* *adicionar classe no ícone depois */
+.accordion-item.active .bi-caret-down-fill {
+    /* *adicionar classe no ícone depois */
     transform: rotate(180deg);
 }
 
@@ -427,22 +478,26 @@ p {
     justify-self: center;
     align-items: center;
     gap: 1.5rem;
-    border-top: 1px solid var(--border-color); /* variável borda*/
-    border-bottom: 1px solid var(--border-color); /* variável borda */
+    border-top: 1px solid var(--border-color);
+    /* variável borda*/
+    border-bottom: 1px solid var(--border-color);
+    /* variável borda */
 }
 
 .contato p {
     text-align: center;
-/*  font-family: "";
+    /*  font-family: "";
     color: var(); */
 }
 
 .contato .btn {
-    width: auto; /* correção */
+    width: auto;
+    /* correção */
 }
 
 .contato.email {
-    text-transform: uppercase; /* caixa-alta */
+    text-transform: uppercase;
+    /* caixa-alta */
 }
 
 
@@ -457,45 +512,54 @@ footer p {
     padding: 1rem;
 }
 
-footer p a{
+footer p a {
     color: #7c00be;
 }
 
 
-/* Responsividade Responsivo */           /* a parte da mídia tem que ser último  */
+/* Responsividade Responsivo */
+/* a parte da mídia tem que ser último  */
 
 @media (min-width: 768px) {
     #header {
-       position: fixed;
-       padding: 1rem 6rem;
+        position: fixed;
+        padding: 1rem 6rem;
     }
+
     .nav-mobile {
         display: none;
     }
-    .header-nav{
+
+    .header-nav {
         display: flex;
     }
-    .header-nav, 
+
+    .header-nav,
     .header-toggle {
         min-width: 30%;
     }
+
     h1 {
         font-size: 5rem;
     }
-    h2 {
 
-    }
-    h3 {
+    h2 {}
 
-    }
-    #home, .sobre, .contato, .inspirações  {
+    h3 {}
+
+    #home,
+    .sobre,
+    .contato,
+    .inspirações {
         padding: 8rem 6rem 4rem 6rem;
     }
 
     .contato {
         padding: 6rem;
     }
-} /* Fim 768px */
+}
+
+/* Fim 768px */
 
 
 @media (min-width: 992px) {
@@ -517,49 +581,67 @@ footer p a{
         gap: 5rem;
     }
 
-    .sobre-conteudo1,.sobre-conteudo2 {
+    .sobre-conteudo1,
+    .sobre-conteudo2 {
         display: grid;
         grid-template-columns: 34% 60%;
     }
 
-} /* Fim 992px */
-    
+}
+
+/* Fim 992px */
+
 @media (min-width: 1200px) {
     h2 {
         font-size: 4rem;
     }
+
     h3 {
         font-size: 2.5rem;
     }
+
     #home {
         padding: 10rem 6rem 2rem;
     }
+
     .main-content .btn {
         width: auto;
     }
-    p, span, li {
+
+    p,
+    span,
+    li {
         font-size: 1.15rem;
     }
+
     .card-button .btn,
     .description-buttom .btn {
         width: auto;
     }
-} /* Fim 1200px */
+}
+
+/* Fim 1200px */
 
 @media (min-width: 1400px) {
-    h1{
+    h1 {
         font-size: 6.25;
     }
-    h2{
+
+    h2 {
         font-size: 4.5rem;
     }
-    h3{
+
+    h3 {
         font-size: 3.25;
     }
+
     .header {
-    padding: 12rem 15rem 2rem;
+        padding: 12rem 15rem 2rem;
     }
-    .sobre, .contato, .inspirações {
+
+    .sobre,
+    .contato,
+    .inspirações {
         padding: 10rem 15rem 4rem;
     }
 
