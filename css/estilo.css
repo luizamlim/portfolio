@@ -242,27 +242,27 @@ p {
     aspect-ratio: 16/9;
 }
 
-#home, .projetos, .sobre, .contato { /* A VÍRGULA REPRESENTA DUAS CLASSES COM AS MESAS PROPRIEDADES */
+#home, .sobre, .contato, .inspirações { /* A VÍRGULA REPRESENTA DUAS CLASSES COM AS MESAS PROPRIEDADES */
     /* padding: 5rem 10rem; */
     padding: 2.5rem 1rem;
 }
 
 
-/* Projetos */
+/* Inspirações */
 
-.projetos {
+.inspirações {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.projetos-container {
+.inspirações-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.projeto-card {
+.inspirações-card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -317,7 +317,7 @@ p {
     /* color: var(--text-botao);*/
 }
 
-.projetos .btn{
+.inspirações .btn{
     width: auto;
     margin: auto;
 }
@@ -488,7 +488,7 @@ footer p a{
     h3 {
 
     }
-    #home, .projetos, .sobre, .contato  {
+    #home, .sobre, .contato, .inspirações  {
         padding: 8rem 6rem 4rem 6rem;
     }
 
@@ -559,7 +559,7 @@ footer p a{
     .header {
     padding: 12rem 15rem 2rem;
     }
-    .projetos, .sobre, .contato {
+    .sobre, .contato, .inspirações {
         padding: 10rem 15rem 4rem;
     }
 
